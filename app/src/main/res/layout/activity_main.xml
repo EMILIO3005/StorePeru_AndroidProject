@@ -6,10 +6,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     tools:context=".MainActivity">
 
 
-    <TextureView
+    <FrameLayout
+        android:id="@+id/contenedorFragment"
         android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="0dp"/>
@@ -25,27 +27,24 @@
         <Button
             android:id="@+id/btnListar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="4dp"
             android:text="L" />
 
         <!-- Botón B -->
         <Button
             android:id="@+id/btnBuscar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="4dp"
             android:text="B" />
 
         <!-- Botón R -->
         <Button
-            android:id="@+id/btnReiniciar"
+            android:id="@+id/btnRegistrar"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_margin="4dp"
             android:text="R" />
 
     </LinearLayout>
